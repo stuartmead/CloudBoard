@@ -81,6 +81,7 @@ public class MainActivity extends CardboardActivity implements CardboardView.Ste
     protected void handleUri(Uri uri){
         if (uri !=null){
             if (uri.getScheme().equals("file")){
+                //TODO: Convert the following to an AsyncTask
                 //new DownloadFilesTask().execute(uri);
                 Log.i(TAG, "Executing DownloadFilesTask");
                 try {
